@@ -200,8 +200,6 @@ async function fetchAndSaveHistoricalMessages(channel: TextChannel) {
 
 	console.log('Completed');
 	process.exit(0);
-
-	return messageCount;
 }
 
 client.once(Events.ClientReady, async () => {
