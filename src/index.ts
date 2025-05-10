@@ -147,7 +147,13 @@ async function createAndSendZipArchive(channel: TextChannel, messages: any[]) {
 	});
 
 	archive.pipe(output);
-	archive.directory(archiveDir, false);
+
+	// Add messages.json file
+	archive.file(messagesFilePath, { name: 'messages.json' });
+
+	// Add attachments directory
+	archive.directory(attachmentsDir, 'attachments');
+
 	await archive.finalize();
 }
 
