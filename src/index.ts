@@ -198,6 +198,9 @@ async function fetchAndSaveHistoricalMessages(channel: TextChannel) {
 	// Create and send zip archive after fetching all messages
 	await createAndSendZipArchive(channel, messages);
 
+	console.log('Completed');
+	process.exit(0);
+
 	return messageCount;
 }
 
