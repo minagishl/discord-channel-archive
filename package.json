@@ -1,0 +1,23 @@
+{
+	"name": "discord-channel-archive",
+	"version": "1.0.0",
+	"description": "Discord bot to archive channel messages and files",
+	"main": "dist/index.js",
+	"scripts": {
+		"start": "tsx src/index.ts",
+		"build": "tsc",
+		"dev": "tsx watch src/index.ts"
+	},
+	"dependencies": {
+		"archiver": "^6.0.1",
+		"axios": "^1.9.0",
+		"discord.js": "^14.14.1",
+		"dotenv": "^16.4.5"
+	},
+	"devDependencies": {
+		"@types/archiver": "^6.0.3",
+		"@types/node": "^20.11.24",
+		"tsx": "^4.7.1",
+		"typescript": "^5.3.3"
+	}
+}
